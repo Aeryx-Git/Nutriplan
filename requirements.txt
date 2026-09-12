@@ -1,0 +1,8 @@
+google-genai
+playwright
+pydantic
+python-dotenv
+
+streamlit
+
+yt-dlp
