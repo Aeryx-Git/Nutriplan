@@ -12,14 +12,13 @@
 ## Setup Instructions
 
 1. **Clone the repository**
-   \\\ash
+   \\\Bash
    git clone https://github.com/Aeryx-Git/Nutriplan.git
    cd Nutriplan
-   \\\
 
 2. **Install Dependencies**
    Ensure you have Python installed, then run:
-   \\\ash
+   \\\Bash
    pip install -r requirements.txt
    \\\
 
@@ -27,20 +26,18 @@
    Create a .env file in the root directory and add your Google Gemini API key:
    \\\env
    GEMINI_API_KEY=your_actual_api_key_here
-   \\\
 
 4. **Install Playwright Browsers**
-   \\\ash
+   \\\Bash
    playwright install chromium
-   \\\
 
 ## Usage
 
 Run the web interface locally using Streamlit:
 
-\\\ash
+\\\Bash 
 streamlit run app.py
-\\\
+
 
 1. Paste a public Instagram Reel URL into the input field.
 2. Click **Download & Extract**.
@@ -48,7 +45,7 @@ streamlit run app.py
 4. Download the extracted JSON or browse your previously saved recipes in the sidebar!
 
 ## 🛠️ Architecture
-- pp.py: Main Streamlit Web UI.
+- app.py: Main Streamlit Web UI.
 - downloader.py: Handles Instagram video downloads via yt-dlp.
 - gemini_extractor.py: Interfaces with the Gemini API to process the video and extract the structured data.
-- alidator.py: Contains the Pydantic schema enforcing the JSON structure.
+- validator.py: Contains the Pydantic schema enforcing the JSON structure.
