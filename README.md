@@ -2,14 +2,14 @@
 
 **NutriPlan Agent** is an end-to-end AI data pipeline and agent workflow designed to intelligently extract and structure complex recipe datasets from Instagram videos. Built as a Kaggle 5-Day Vibe Coding Final Project.
 
-## ✨ Features
+## Features
 - **Multimodal Video Processing**: Uses Gemini 2.5 Flash's native multimodal capabilities to "watch" and "listen" to Instagram reels to extract recipes even when they aren't written in the caption.
 - **Automated Scraping**: Uses yt-dlp to automatically download the highest quality video stream from public Instagram posts.
 - **Data Structuring**: Enforces strict JSON output schemas (Recipe Name, Ingredients, Instructions) using Pydantic.
 - **Local Storage**: Automatically saves extracted recipes to a local database (saved_recipes.json) for later reference.
 - **Beautiful Web UI**: A clean, interactive Streamlit interface for easy operation.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository**
    \\\ash
@@ -34,7 +34,7 @@
    playwright install chromium
    \\\
 
-## 🎮 Usage
+## Usage
 
 Run the web interface locally using Streamlit:
 
